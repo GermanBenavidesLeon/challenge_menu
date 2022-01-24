@@ -1,8 +1,9 @@
 import { Navbar, Container, Nav, NavDropdown, FormControl, Form, Button } from 'react-bootstrap';
+import './NavBar.css'
 
 const NavBar = () => {
   return( 
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="secondary" expand="lg" className='navClass'>
         <Container fluid>
             <Navbar.Brand href="#">Hotel Boutique</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
@@ -25,7 +26,7 @@ const NavBar = () => {
                     className="me-2"
                     aria-label="Search"
                     />
-                    <Button variant="outline-success">Search</Button>
+                    <Button variant="outline-dark">Search</Button>
                 </Form>
             </Navbar.Collapse>
         </Container>
