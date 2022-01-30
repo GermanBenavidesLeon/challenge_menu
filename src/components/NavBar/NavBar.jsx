@@ -3,7 +3,7 @@ import './NavBar.css'
 
 const NavBar = () => {
   return( 
-    <Navbar bg="secondary" expand="lg" className='navClass'>
+    <Navbar expand="lg" className='navClass'>
         <Container fluid>
             <Navbar.Brand href="#">Hotel Boutique</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />

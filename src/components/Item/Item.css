@@ -1,0 +1,26 @@
+.item{
+    padding: 5px;
+    margin-top: 30px;
+    background: #616161;
+    display: inline-flex;
+    width: auto;
+    margin-left: 200px;
+    margin-right: 100px;
+    animation: 2s;
+    animation-name: aparecer;
+    color: #fff176;
+    border-radius: 5px;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.imagen{
+    height: 240px;
+}
