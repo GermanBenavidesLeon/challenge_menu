@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Challenge App
+## Alkemy 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### [DEMO](https://hotelmenuchallenge.netlify.app/)
 
-## Available Scripts
+Para este proyecto por el momento e instalado las siguientes librerias:
 
-In the project directory, you can run:
+| Librerias  | Utilizacion |
+| ------ | ------ |
+| Animate Css '4.1.1' | La animacion para el titulo en el cart.  |
+| Firebase '8.9.1' | No es una libreria, es una plataforma de google para nuestra base de datos.|
+| Boostrap '5.1.3' | Se utilizo para los estilos del formulario y otros. |
+| React-boostrap '2.0.0' |Se utilizo para el Modal, NavBar y otros estilos para la aplicacion.|
+| React-icons '4.3.1' | Se utilizo para la mayoria de iconos |
+| Sweet Alert-React '4.2.0' | Se utilizo para los mensajes en ItemCount y formulario |
+| Router-react-dom '6.0.1'| Se utilizo para las rutas de nuestra App |
+| Material Ui '5.1.1' | Se utilizaron para estilos iconos y botones |
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> Con respecto al diseño o estilos de la App
+> utilizo las librerias de Boostrap y algunos
+> ajustes con Css. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Instalacion
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React Js requires [Node.js](https://nodejs.org/es/) to run.
 
-### `npm run build`
+```
+npx create-react-app my-app
+cd my-app
+code .
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para este Proyecto Challenge de Alkemy, se generaron diferentes componentes, mediante funciones, props y hooks, teniendo como idea principal que el usuario genere una orden. el primer componente fue crear el NavBar, e ir dando un estilo que sea simple de interactuar, mediante un catalogo y tambien categorias del producto; los componentes se fueron generando de la sgte secuencia: en primera estancia el ListContainer, Item e ItemList, en estos componentes creamos nuestras primeras cards para nuestro catalogo; despues continue con ItemDetailContainer e ItemDetail, en donde generamos las cards con el detalle del producto mas el ItemCount en donde el usuario puede elegir la cantidad del producto y ademas tiene una alerta con los limites de productos a seleccionar teneienedo en cuenta el stock y la cantidad inicial. En esta secuencia a continuación genere los componentes para el carrito de compras, los componentes son: primero el componente Cart en donde se creó la tabla, que detalla el producto seleccionado por el usuario, segundo genere un componente CartContext, este lleva todas las funciones que van dentro del componente Cart, como por ejemplo agregar ítems, borrar ítems, precio total…..; dentro del componente Cart tenemos el boton generar orden, el cual al dar click nos genera un modal que contiene un formulario donde el usuario puede ingresar sus datos teniendo en cuenta la información requerida, cada campo del formulario tiene validaciones mediante funciones ternarias que indican que debe completar el formulario. Dentro de la aplicación creamos un array de algunos de los productos del hotel. La aplicación está conectada a Firebase, en donde creamos también una colección de nuestros productos, además está conectada para recibir los datos del usuario al momento de generar la orden de compra mediante el formulario. Voy a continuar trabajando en el proyecto challenge de Alkemy , ya que me falto crear el login, el buscador de los platos y ajustar la parte responsive para otros dispositivos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Plugin | README |
+| ------ | ------ |
+| GitHub | [plugins/github/README.md][PlGh] |
+| Google Drive | [plugins/googledrive/README.md][PlGd] |
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
