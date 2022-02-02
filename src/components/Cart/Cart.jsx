@@ -23,7 +23,7 @@ const Cart = () => {
                 </div>
                 <div class='boton1'>
                 <Link to='/menu' className='Link'>
-                    <Button variant="outline-dark" className='button1' startIcon={<MdShoppingBag  />}><h5>Realiza tu pedido</h5></Button>
+                    <Button variant="secondary" className='button1' startIcon={<MdShoppingBag  />}><h6 className='cartboton1'>Realiza tu pedido</h6></Button>
                 </Link>
                 </div>
             </div>

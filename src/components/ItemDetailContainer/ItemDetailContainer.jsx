@@ -3,6 +3,7 @@ import { Spinner } from 'react-bootstrap';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 import { getFirestore } from '../../Service/getFirestore';
+import './ItemDetailContainer.css'
 
 
 const ItemDetailContainer = () => {
@@ -20,7 +21,7 @@ const ItemDetailContainer = () => {
   },[id])
   
     return (
-        <div>
+        <div className='detailContainer'>
             { loanding ? <div className='spinner'>
                             <h4>Cargando ....</h4>
                             <Spinner animation="border" size="sm" />

@@ -7,15 +7,15 @@ import './Item.css'
 const Item = ({prod}) => {
   return (
     <div className='item'>
-            <Card style={{ width: '14rem', background: '#424242'}} key={prod.id}>
-                <Card.Img variant="top" src={prod.imagen} className='imagen' />
+            <Card style={{ width: '15rem', background: '#424242'}} key={prod.id}>
+                <Card.Img variant="top" src={prod.imagen} className='imagenItem' />
                     <Card.Body>
-                        <Card.Title>{prod.name}</Card.Title>
-                            <Card.Text>
+                        <h4 className='cardBody'>{prod.name}</h4>
+                            <Card.Text className='cardBody'>
                                 {prod.categoria}
                             </Card.Text>
                         <Link to={`/detalle/${prod.id}`}>
-                          <Button variant="outline-dark" style={{ color: '#ffff8d'}}>Detalle del plato</Button>
+                          <Button variant="outline-dark" style={{ color: '#ffff8d'}}><h4 className='cardBody'>Ver mas ...</h4></Button>
                         </Link>
                     </Card.Body>
             </Card>

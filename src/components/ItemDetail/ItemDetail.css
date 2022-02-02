@@ -1,10 +1,8 @@
 .itemDetail{
-    padding: 5px;
-    margin-top: 30px;
+    margin-top: 100px;
     background: #616161;
     display: inline-flex;
-    margin-left: 400px;
-    margin-right: 400px;
+    
     animation: 2s;
     animation-name: aparecer;
     color: #fff176;
@@ -12,11 +10,21 @@
 }
 
 .imagen{
-    height: 300px;
-    
+    height: 300px;   
 }
 
 .botones{
     margin: 5px;
 }
 
+@media (max-width: 1115px) {
+    .itemDetail{
+        margin-top: 160px;
+        display: inline-flex;
+        animation: 3s;
+        animation-name: aparecer;
+        color: #fff176;
+        border-radius: 5px;
+    }
+    
+}
