@@ -2,3 +2,13 @@
     height: 100px;
     background: #424242;
 }
+
+.Link{
+    text-decoration: none;
+}
+
+.cartWi {
+    display: flex;
+    align-items: center;
+    color: #fff176;
+}

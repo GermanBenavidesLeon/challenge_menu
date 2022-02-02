@@ -1,0 +1,22 @@
+.itemDetail{
+    padding: 5px;
+    margin-top: 30px;
+    background: #616161;
+    display: inline-flex;
+    margin-left: 400px;
+    margin-right: 400px;
+    animation: 2s;
+    animation-name: aparecer;
+    color: #fff176;
+    border-radius: 5px;
+}
+
+.imagen{
+    height: 300px;
+    
+}
+
+.botones{
+    margin: 5px;
+}
+

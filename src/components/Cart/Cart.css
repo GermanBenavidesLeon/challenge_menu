@@ -1,0 +1,57 @@
+.Cart{
+    text-align: center;
+    color: #fff176;
+    margin-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Link{
+    text-decoration: none;
+}
+
+.boton1{
+    padding: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 40px;
+    background: #9e9e9e;
+    border-radius: 10px;
+}
+
+.button1{
+    height: 70px;
+    width: 350px;
+    
+}
+
+.classCart{
+    padding: 20px;
+}
+
+.cartPedido{
+    color: #fff176;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.table{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.botonesCart{
+    text-align: center;
+    margin-top: 40px;
+    background: #333333;
+    width: 42%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.botones{
+    margin: 5px;
+}

@@ -1,25 +1,34 @@
-import React from 'react';
-import { Card, Button, ListGroup } from 'react-bootstrap'; 
+import React, { useState } from 'react';
+import { Card, ListGroup } from 'react-bootstrap'; 
+import ItemCount from '../ItemCount/ItemCount'
+import { useCartContext } from '../Context/CartContext';
+import './ItemDetail.css'
 
-const ItemDetail = (prod) => {
+const ItemDetail = ({items}) => {
+    const [, setCount] = useState(0)
+    const {agregarItem} = useCartContext()
+
+    const onAdd = (cant) => {
+        setCount(cant)
+        agregarItem({...items, cantidad: cant})   
+    }
+
   return (
-    <div>
-        <Card style={{ width: '18rem' }} key={prod.id}>
-            <Card.Img variant="top" src={prod.imagen} />
+    <div className='itemDetail'>
+        <Card style={{ width: '20rem', background: '#424242' }} key={items.id}>
+            <Card.Img variant="top" src={items.imagen} className='imagen' />
                 <Card.Body>
-                    <Card.Title>{prod.name}</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">{prod.categoria}</Card.Subtitle>
+                    <Card.Title>{items.name}</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">{items.categoria}</Card.Subtitle>
                             <Card.Text>
-                                {prod.detalle}
+                                {items.detalle}
                             </Card.Text>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>{prod.price}</ListGroup.Item>
+                                <ListGroup.Item style={{ width: '8rem', background: '#757575', borderRadius: '5px' }}> $ {items.price}</ListGroup.Item>
                             </ListGroup>
-                        <ItemCount initial={1} stock={5} />
-                    <Button variant="secondary">Comprar</Button>
+                        <ItemCount initial={1} stock={5} onAdd={onAdd} />
                 </Card.Body>
         </Card>
-
     </div>
   ) 
     

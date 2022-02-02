@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Item.css'
 
 
@@ -13,7 +14,9 @@ const Item = ({prod}) => {
                             <Card.Text>
                                 {prod.categoria}
                             </Card.Text>
-                        <Button variant="outline-dark" style={{ color: '#ffff8d'}}>Detalle del plato</Button>
+                        <Link to={`/detalle/${prod.id}`}>
+                          <Button variant="outline-dark" style={{ color: '#ffff8d'}}>Detalle del plato</Button>
+                        </Link>
                     </Card.Body>
             </Card>
     </div>
