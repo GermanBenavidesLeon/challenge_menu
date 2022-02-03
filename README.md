@@ -1,7 +1,7 @@
 # Challenge App
 ## Alkemy 
 
-##### [DEMO](https://hotelmenuchallenge.netlify.app/)
+##### [DEMO](https://hotelmenu.netlify.app/)
 
 Para este proyecto por el momento e instalado las siguientes librerias:
 
