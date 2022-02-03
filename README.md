@@ -14,7 +14,6 @@ Para este proyecto por el momento e instalado las siguientes librerias:
 | React-icons '4.3.1' | Se utilizo para la mayoria de iconos |
 | Sweet Alert-React '4.2.0' | Se utilizo para los mensajes en ItemCount y formulario |
 | Router-react-dom '6.0.1'| Se utilizo para las rutas de nuestra App |
-| Material Ui '5.1.1' | Se utilizaron para estilos iconos y botones |
 
 
 > Con respecto al diseño o estilos de la App
